@@ -2205,6 +2205,7 @@ footer .small-icon li {margin: 0 8px;}
 @-o-keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
 @keyframes fadeIn {0% {opacity: 0;} 100% {opacity: 1;}}
 
+
 .mfp-figure {-webkit-animation-name: fadeIn; -moz-animation-name: fadeIn; -o-animation-name: fadeIn; -ms-animation-name: fadeIn; animation-name: fadeIn; -webkit-animation-duration: .4s; -moz-animation-duration: .4s; -ms-animation-duration: .4s; -o-animation-duration: .4s; animation-duration: .4s; -webkit-animation-fill-mode: both; -moz-animation-fill-mode: both; -ms-animation-fill-mode: both; -o-animation-fill-mode: both; animation-fill-mode: both; webkit-backface-visibility: hidden; -moz-backface-visibility:hidden;  -ms-backface-visibility:hidden;}
 
 /* start state */
@@ -2252,6 +2253,18 @@ footer .small-icon li {margin: 0 8px;}
 .alert-dismissable .close, .alert-dismissible .close {top: 0}
 .alert-dismissible .btn-close {height: 100%; background-size: 10px; padding-top: 0; padding-bottom: 0; outline: none;}
 .alert-dismissible .btn-close:focus {box-shadow: none;}
+
+@-webkit-keyframes blackToblack {  
+    0% { background-color: black; }
+    50% { background-color: black; }
+    51% { background-color: black; }
+    100% { background-color: rgba(0, 0, 0, 0.6); }
+  }
+  
+.hideTitle {
+    -webkit-animation-name: blackToblack;  
+    -webkit-animation-duration: 7s; 
+}   
 
 /* ===================================
     19. Header
