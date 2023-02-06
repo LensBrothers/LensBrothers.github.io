@@ -2155,7 +2155,12 @@ a.likes-count span {position: relative; top: -1px}
 .social-icon-style-11 a.delicious {color: #205cc0}
 .social-icon-style-11 a.livejournal {color: #00b0ea}
 .social-icon-style-11 a:hover {color: #fff;}
-
+.test-icon-1{
+    background: url('../../images/lensbrothers/Sans\ titre-1.png');
+    height: 20px;
+    width: 20px;
+    /* Other styles here */
+}
 footer .small-icon li {margin: 0 8px;}
 
 /* country flag icon */
@@ -3511,7 +3516,7 @@ figure{margin: 0;}
 
 /* tab style 1 */
 .tab-style1 .nav-tabs{border: none; width: 100%;}
-.tab-style1 .nav-tabs li{display: inline-block; float: none; width:25%;}
+.tab-style1 .nav-tabs li{display: inline-block; float: none; width:15%;}
 .tab-style1 .nav-tabs li a{margin: 0;}
 .tab-style1 .nav-tabs li:hover{background: transparent;}
 .tab-style1 .nav-tabs > li > a, .tab-style1 .nav-tabs > li > a:focus, .tab-style1 .nav-tabs > li > a:hover{border: none; background-color: transparent;}
