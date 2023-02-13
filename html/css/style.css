@@ -3516,7 +3516,7 @@ figure{margin: 0;}
 
 /* tab style 1 */
 .tab-style1 .nav-tabs{border: none; width: 100%;}
-.tab-style1 .nav-tabs li{display: inline-block; float: none; width:15%;}
+.tab-style1 .nav-tabs li{display: inline-block; float: none; width:25%;}
 .tab-style1 .nav-tabs li a{margin: 0;}
 .tab-style1 .nav-tabs li:hover{background: transparent;}
 .tab-style1 .nav-tabs > li > a, .tab-style1 .nav-tabs > li > a:focus, .tab-style1 .nav-tabs > li > a:hover{border: none; background-color: transparent;}
