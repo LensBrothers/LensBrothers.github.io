@@ -5,7 +5,7 @@ if( ! empty( $_POST['email'] ) ) {
 	$enable_smtp = 'no'; // yes OR no
 
 	// Email Receiver Address
-	$receiver_email = 'info@yourdomain.com';
+	$receiver_email = 'info@lensbrothers.ca';
 
 	// Email Receiver Name for SMTP Email
 	$receiver_name 	= 'Your Name';
@@ -17,7 +17,6 @@ if( ! empty( $_POST['email'] ) ) {
 	$name 	= isset( $_POST['name'] ) ? $_POST['name'] : '';
 	$phone 	= isset( $_POST['phone'] ) ? $_POST['phone'] : '';
 	$comment= isset( $_POST['comment'] ) ? $_POST['comment'] : '';
-	$budget = isset( $_POST['budget'] ) ? $_POST['budget'] : '';
 	
 	$message = '
 		<html>
