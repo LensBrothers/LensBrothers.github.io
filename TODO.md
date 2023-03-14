@@ -1,6 +1,5 @@
 FEATURE 
 
-bouton de soumission page principale
 
 toute les pages de réalisations individuelles
 
@@ -22,8 +21,6 @@ pourquoi nous dans service
 
 FIX
 
--VIDEO YOUTUBE SUR TEMPLATE 
-
 -Quand on arrive sur le site, on voit le youtube en arriere du header mais quand on clique sur le logo pour retourner a l'acceuil, c'est correct, d'apres moi y'a 2 reglages de temps a faire
 
 -Le stop motion ne roule pas, il n'est pas visible
@@ -32,16 +29,13 @@ FIX
 
 -le padding
 
-- fleche bouton soumission
 
 ----------------------
-échéance
+Calendrier
 
-25 fév dans la journée
+Prochaine session de work : Lundi 20 mai
 
-13 mars
-
-idéalement on fini fin mars
+Échéance : idéalement on fini fin mars
 
 ----------------------
 Documentation : 

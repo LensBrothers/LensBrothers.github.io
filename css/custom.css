@@ -1,6 +1,12 @@
+@media (max-width: 1000px) {
+  .fixedbutton {
+    display: none;
+  }
+}
+
 .fixedbutton {
-  position: fixed;
-  top: 7vh;
+  position: absolute;
+  top: 23%;
   right: 3vw; 
   z-index: 100;
 }
