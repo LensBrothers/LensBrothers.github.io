@@ -25,6 +25,47 @@
         <link rel="stylesheet" type="text/css" href="css/responsive.css" />
         <link rel="stylesheet" type="text/css" href="css/custom.css" />
     </head>
+    <script>
+        // fonction pour changer l'image
+        window.addEventListener("load", (event) => {
+            var i = 0;
+            const tabImage = ['./images/lensbrothers/Sans titre-1.png','./images/lensbrothers/Sans titre-2.png','./images/lensbrothers/Sans titre-3.png','./images/lensbrothers/Sans titre-4.png','./images/lensbrothers/Sans titre-5.png'];
+            function changeImage(side) {
+                if(side=="right"){
+                    if(i==4){
+                        i = 0;
+                    } else {
+                        i++;
+                    }
+                }
+                if(side=="left") {
+                    if(i==0){
+                        i=4;
+                    }else{
+                        i--;
+                    }
+                }
+                document.getElementById('imagechanger').style.backgroundImage = `url('${tabImage[i]}')`;
+            }
+    
+            // ajouter un écouteur d'événements pour chaque onglet
+            const elem2 = document.getElementById('clickimageleft');
+            const elem = document.getElementById('clickimagright');
+            // if(elem){
+                elem.addEventListener('click', () => {
+                changeImage('right');
+                });
+            // }
+            // if(elem){
+                elem2.addEventListener('click', () => {
+                changeImage('left');
+                });
+            // }
+
+        });
+
+    </script>
+
     <body>
         <!-- start header -->
         <header>
@@ -295,9 +336,9 @@
         <section class="wow animate__fadeIn no-padding-bottom main-slider mobile-height content-right-slider no-padding-top">
             <div class="container-fluid">
                 <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col cover-background md-h-500px sm-h-350px wow animate__fadeIn" style="background-image:url('https://via.placeholder.com/1200x854')"></div>
+                    <div class="col cover-background md-h-500px sm-h-350px wow animate__fadeIn" id="imagechanger" style="background-image:url('https://via.placeholder.com/1200x854')"></div>
                     <div class="col px-0 bg-extra-dark-gray text-center sm-padding-20px-tb wow animate__fadeIn">
-                        <div class="swiper-container white-move" data-slider-options='{ "loop": true, "slidesPerView": "1", "allowTouchMove":true, "autoplay": { "delay": 5000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "pagination": { "el": ".swiper-pagination", "clickable": true } }'>
+                        <div class="swiper-container white-move" data-slider-options='{ "loop": true, "slidesPerView": "1", "allowTouchMove":true, "keyboard": { "enabled": true, "onlyInViewport": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "pagination": { "el": ".swiper-pagination", "clickable": true } }'>
                             <div class="swiper-wrapper">
                                 <!-- start slider item -->
                                 <div class="swiper-slide last-paragraph-no-margin">
@@ -372,8 +413,8 @@
                                 <!-- end slider item -->
                             </div>
                             <!-- start slider pagination -->
-                            <div class="swiper-button-next arrow-gray arrow-big slider-navigation-style-01"><i class="ti-arrow-right"></i></div>
-                            <div class="swiper-button-prev arrow-gray arrow-big slider-navigation-style-01"><i class="ti-arrow-left"></i></div>
+                            <div class="swiper-button-next arrow-gray arrow-big slider-navigation-style-01"><i class=" ti-arrow-right" id="clickimagright"></i></div>
+                            <div class="swiper-button-prev arrow-gray arrow-big slider-navigation-style-01"><i class=" ti-arrow-left" id="clickimageleft"></i></div>
                             <!-- end slider pagination -->
                         </div>
                     </div>
@@ -400,6 +441,7 @@
         <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
         <!-- end scroll to top -->
         <!-- javascript -->
+
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootsnav.js"></script>
         <script type="text/javascript" src="js/jquery.nav.js"></script>
