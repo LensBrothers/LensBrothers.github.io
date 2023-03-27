@@ -39,7 +39,6 @@ Prochaine session de work : Lundi 20 mai
 
 ----------------------
 Documentation : 
-test
 
 Code pour icone, https://icomoon.io/app/#/select
 
