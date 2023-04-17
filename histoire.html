@@ -23,290 +23,201 @@
         <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-        <link rel="stylesheet" href="vertical-timeline-with-animations/dist/style.css">
-        <!-- <link rel="stylesheet" type="text/css" href="vertical-timeline-with-animations/css/Timeline.css">
-        <link rel="stylesheet" type="text/css" href="vertical-timeline-with-animations/css/TimelineTablet.css">
-        <link rel="stylesheet" type="text/css" href="vertical-timeline-with-animations/css/TimelineAnimation.css">
-        <link rel="stylesheet" type="text/css" href="vertical-timeline-with-animations/css/TimelienUapperParts.css"> -->
-        <link rel="stylesheet" type="text/css" href="css/foundation.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/timeline.css" />
+
     </head>
     <body>
         <!-- start header -->
-        <header>
-          <!-- start navigation -->
-          <nav class="navbar navbar-default bootsnav bg-black header-dark white-link menu-logo-center navbar-expand-lg">
-              <div class="container-lg nav-header-container opacity9">
-                  <!-- start logo -->
-                  <div class="center-logo ">
-                      <a href="index.html" title="LensBrothers" class="logo"><img src="images/lensbrothers/Lens_brotherLogo_pour_web.png" data-at2x="images/lensbrothers/Lens_brotherLogo_pour_web.png" class="logo-dark" alt="Pofo"><img src="images/lensbrothers/Lens_brotherLogo_pour_web.png" data-at2x="images/lensbrothers/Lens_brotherLogo_pour_web.png" alt="Pofo" class="logo-light default"></a>
-                  </div>
-                  <!-- end logo -->
-                  <div class="col col-lg-12 accordion-menu">
-                      <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle-1">
-                          <span class="sr-only">toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                      <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
-                          <ul class="nav navbar-nav alt-font text-normal w-40 md-w-100 text-sm-start justify-content-end" data-in="animate__fadeIn" data-out="animate__fadeOut">
-                            <!-- start menu item -->
-                            <li class="dropdown megamenu-fw">
-                                <a href="services.html">Services offerts</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                            </li>
-                            <li class="dropdown megamenu-fw">
-                                <a href="realisations.html">nos réalisations</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                            </li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal w-40 md-w-100 justify-content-start" data-in="animate__fadeIn" data-out="animate__fadeOut">
-                            <!-- start menu item -->
-                            <li class="dropdown megamenu-fw">
-                                <a href="equipe.html">L'Équipe</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                            </li>
-                            <li class="dropdown megamenu-fw">
-                                <a href="histoire.html">Notre histoire</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
-                            </li>
-                        </ul>
-                      </div>
-                  </div>
-              </div>
-          </nav>
-          <!-- end navigation -->  
-      </header>
+        <header style="margin-bottom: 50px;">
+            <!-- start navigation -->
+            <nav class="navbar navbar-default bootsnav bg-black header-dark white-link menu-logo-center navbar-expand-lg">
+                <div class="container-lg nav-header-container opacity9">
+                    <!-- start logo -->
+                    <div class="center-logo ">
+                        <a href="index.html" title="LensBrothers" class="logo"><img src="images/lensbrothers/Lens_brotherLogo_pour_web.png" data-at2x="images/lensbrothers/Lens_brotherLogo_pour_web.png" class="logo-dark" alt="Pofo"><img src="images/lensbrothers/Lens_brotherLogo_pour_web.png" data-at2x="images/lensbrothers/Lens_brotherLogo_pour_web.png" alt="Pofo" class="logo-light default"></a>
+                    </div>
+                    <!-- end logo -->
+                    <div class="col col-lg-12 accordion-menu">
+                        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle-1">
+                            <span class="sr-only">toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-collapse collapse justify-content-between" id="navbar-collapse-toggle-1">
+                            <ul class="nav navbar-nav alt-font text-normal w-40 md-w-100 text-sm-start justify-content-end" data-in="animate__fadeIn" data-out="animate__fadeOut">
+                              <!-- start menu item -->
+                              <li class="dropdown megamenu-fw">
+                                  <a href="services.html">Services offerts</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                              </li>
+                              <li class="dropdown megamenu-fw">
+                                  <a href="realisations.html">nos réalisations</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                              </li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal w-40 md-w-100 justify-content-start" data-in="animate__fadeIn" data-out="animate__fadeOut">
+                              <!-- start menu item -->
+                              <li class="dropdown megamenu-fw">
+                                  <a href="equipe.html">L'Équipe</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                              </li>
+                              <li class="dropdown megamenu-fw">
+                                  <a href="histoire.html">Notre histoire</a><i class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown" aria-hidden="true"></i>
+                              </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fixedbutton">
+                    <!-- start buttons -->
+                    <a href="soumission.html" class="btn btn-custom btn-black-2 text-large border-radius-4 lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto">Demande de soumission</a>
+                    <!-- end buttons -->
+                </div>
+            </nav>
+            <!-- end navigation -->  
+        </header>
         <!-- end header -->
-        <!-- Start TimeLine -->
-        
-            <!--UpperParts Starts-->
-          
-            <div class="UpperPart grid-container fluid">
-              <div class="grid-x">
-                <div class="UpperPart-text large-6 medium-12 small-12 cell">
-                  <h2 class="UpperPart-Title">Mussum ipsum cacilds</h2>
-                  <h4 class="UpperPart-SubTitle">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                          </h4>
-                  <p class="UpperPart-Description">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                  </p>
-                  <p class="UpperPart-Description">
-                   Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                  </p>
-                </div>
-                <div class="UpperPart-Img large-6 medium-12 small-12 cell">
-                  <img src="http://via.placeholder.com/600x750" alt="">
-                </div>
-              </div>
-            </div>
-          
-            <!--Connecting Lines -this is the vertical and horizontal lines parts before timeline starts-->
-            <div class="large-12 medium-12 small-12 connection-line">
-              <div class="horizontal-lines" id="line-right"></div>
-            </div>
-          
-          
-            <!--TimeLine start-->
+        <main id="home" class="contents">
+          <div class="container">
             <ul class="timeline">
-              <li>
-                <div class="timeline-badge">2018</div>
+              <li class="timeline-line"></li>
+            </ul>
+            <ul class="timeline">
+              <li class="timeline-line i-row"></li>
+              <li class="timeline-item i-row " style="font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
                 <div class="timeline-panel">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                  <div id="services" class="timeline-heading"></div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">Le monde de la production multimédia n’est pas seulement un emploi pour moi, c’est une passion qui s’est développée dans les pentes de la station de ski de Stoneham, près de Québec. Étant un mordu des sports extrêmes de glisse, j’ai eu l’initiative de me procurer ma première camera pour capturer des prises de vues intenses de mes camarades, tentant de réaliser toutes sortes d’acrobaties.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/1.png"></div>
                     </div>
-                    <div class="timeline-body">
-                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline-panel timeline-inverted timeline-panel-img">
-                  <div class="timeline-panel-body">
-                    <img src="http://via.placeholder.com/400x400" alt="">
                   </div>
                 </div>
               </li>
-          
-              <li>
-                <div class="timeline-badge">2017</div>
+              <li class="timeline-item i-row" style="margin-top: 50px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
                 <div class="timeline-panel">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline-panel timeline-inverted">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Consetis adipiscings elitis</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
+                  <div id="services" class="timeline-heading">2014</div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">C’est à l’âge de 14 ans que j’obtenu mon premier mandat de production vidéo ; filmer et créer une vidéo pour deux skieurs ‘’FreeStyle’’ afin qu’ils aient un média à présenter pour se qualifier à une compétition. Nous avons tourné cette vidéo durant deux fins de semaine complètes et j’ai passé une bonne quinzaine d’heures à faire la post-production. C’est à ce moment que j’ai compris qu’il m’était possible de gagner ma vie en faisant quelque chose qui me passionne.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/2.png"></div>
                     </div>
                   </div>
                 </div>
               </li>
-          
-              <li>
-                <div class="timeline-panel timeline-panel-img">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-          
-              <li>
-                <div class="timeline-badge">2016</div>
+              <li class="timeline-item i-row" style="margin-top: 50px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
                 <div class="timeline-panel">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline-panel timeline-inverted">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Consetis adipiscings elitis</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
+                  <div id="services" class="timeline-heading">2015</div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">J’eus donc l’idée de publier des annonces proposant mes services à quelques endroits sur internet (Facebook, Kijiji, LesPacs, etc.). Les mandats que j’ai obtenus par ces publications m’ont permis d’investir dans mon premier Drone, et surtout de consolider la pensée qui tourne sans cesse dans ma tête « Je suis né pour créer, c’est ce que je veux faire comme carrière ». J’avais maintenant un but, mais disons que c’était seulement le premier pas. Il me restait donc beaucoup de chemin à parcourir.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/3.png"></div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="timeline-panel timeline-inverted timeline-panel-img">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Consetis adipiscings elitis</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-badge">2015</div>
+              <li class="timeline-item i-row" style="margin-top: 200px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
                 <div class="timeline-panel">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline-panel timeline-inverted">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Consetis adipiscings elitis</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
+                  <div id="services" class="timeline-heading">2016</div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">Décidé à accomplir mon but, j’ai complété une première formation d’opérateur de drone en automne 2016 afin d’offrir mes services d’imagerie aérienne tout en respectant la réglementation. J’ai élargi mon réseau de contacts au fils des mois qui ont suivi, pour réaliser des mandats pour quelques courtiers immobiliers. Ils m’ont accordé leur confiance pour produire plusieurs vidéos de type « visite virtuelle » en tant que pigiste.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/4.png"></div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="timeline-badge">2014</div>
+              <li class="timeline-item i-row" style="margin-top: 50px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
                 <div class="timeline-panel">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                  <div id="services" class="timeline-heading">2017</div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">Environ un an après le début de notre partenariat, on m’a offert un poste dans leur entreprise, j’étais responsable de l’ensemble des productions multimédias. Pendant cette période, ayant l’envie constante de performer et de devenir un meilleur cinéaste, j’ai entrepris et complété une formation à l’école de cinéma et de télévision de Québec (l’ECTQ) où j’ai appris les techniques avancées dans l’industrie du cinéma sur l’utilisation de la caméra, la prise de son, l’éclairage et la direction de la photographie.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/5.png"></div>
                     </div>
                   </div>
                 </div>
-                <div class="timeline-panel timeline-inverted timeline-panel-img">
-                  <div class="timeline-panel-body">
-                    <img src="http://via.placeholder.com/400x400" alt="">
-                  </div>
-                </div>
               </li>
-              <li>
-                <div class="timeline-badge">2013</div>
-                <div class="timeline-panel timeline-panel-img">
-                  <div class="timeline-panel-body">
-                    <img src="http://via.placeholder.com/400x400" alt="">
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-badge">2016</div>
+              <li class="timeline-item i-row" style="margin-top: 50px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
                 <div class="timeline-panel">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Mussum ipsum cacilds</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
-                        Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="timeline-panel timeline-inverted">
-                  <div class="timeline-panel-body">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Consetis adipiscings elitis</h4>
-                    </div>
-                    <div class="timeline-body">
-                      <p>Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce
-                        receita de bolis, mais bolis eu num gostis.</p>
+                  <div id="services" class="timeline-heading">2017</div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">Après avoir réussis cette formation en 2017, j’ai décidé de m’ouvrir à de nouveaux défis. Je me suis procuré ma première caméra  de cinéma (RED) pour offrir des images de qualité à ma clientèle grandissante. C’est alors en octobre 2017 que je me suis lancé dans mon rêve soit ouvrir ma propre boîte de production vidéo.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/5b.png"></div>
                     </div>
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="timeline-badge">End</div>
+              <li class="timeline-item i-row" style="margin-top: 50px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
+                <div class="timeline-panel">
+                  <div id="services" class="timeline-heading">2018</div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">En 2018, j’étais prêt à mettre les pieds dans la cour des grands. Mon entreprise étant en pleine expansion, j’ai décidé de l’incorporer au Québec. Je pouvais donc offrir des services diversifiés à mes clients à partir de ma compagnie québécoise LensBrothers inc. Depuis ce temps, j’ai réalisé des mandats de vidéos et de photographies dans de nombreux secteurs d’activités tels les vidéoclips, l’événementiel, la promotion de produits et services, la construction, les ressources humaines et plusieurs autres.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/6.JPEG"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-item i-row" style="margin-top: 50px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
+                <div class="timeline-panel">
+                  <div id="services" class="timeline-heading">2018</div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">En 2018, la réglementation concernant les vols d’aéronef télépiloté a changé. Pour me conformer à la nouvelle réglementation, j’ai complété en octobre 2020 une formation en tant que pilote d’opération avancée d’aéronef télépiloté qui me permet de piloter un drone dans l’ensemble du Canada. Aussi, cette formation fait en sorte que je peux maintenant demander des autorisations de vol plus facilement et surtout, plus rapidement ce qui facilite les tournages de mes clients dans des délais restreints.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"><img class="thumbnail img-responsive" src="images/histoire/7.jpg"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-item i-row" style="margin-top: 200px; font-size: 18px;">
+                <div class="timeline-badge"><a href="#"></a></div>
+                <div class="timeline-panel">
+                  <div id="services" class="timeline-heading"></div>
+                  <div class="timeline-content">
+                    <p style="font-weight: 480;">J’ai à coeur le succès de mes clients, c’est pourquoi j’offre des services de production vidéo à la fine pointe de la technologie.  Je complète des formations plusieurs fois par année pour développer de nouvelles techniques de travail pour guider mes clients dans leur marketing numérique. Je souhaite devenir la référence à Québec en satisfaisant les besoins de mes clients en production vidéo. Choisir LensBrothers, c’est choisir un projet vidéo de qualité clé en main. Je vous accompagnerais de A à Z afin de mettre sur pied vos idées marketing.</p>
+                    <div class="row services-list">
+                      <div class="col-xs-4"></div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           
-            <!---EndParts Starts-->
-            <div class="grid-container fluid">
-              <div class="endpart">
-          
-              </div>
-            </div>
-        <!-- End TimeLine -->
+          </div>
+        </main>
 
-        
+        <!-- start section -->
+        <section class="pb-0 bg-white wow animate__fadeIn " style="padding:0">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-lg-8 col-md-10 margin-two-bottom text-center">
+                      <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-10px-bottom">Et la suite? Elle sera avec vous!</h5>
+                      <a href="soumission.html" class="btn btn-custom btn-black-2 text-large border-radius-4 lg-margin-15px-bottom d-table d-lg-inline-block md-margin-lr-auto">Demande de soumission</a>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- end section  -->
+    
         <!-- start footer --> 
         <!-- start parallax scrolling style 01 section -->
         <section class="extra-big-section parallax wow animate__fadeIn" data-parallax-background-ratio="0.5" style="background-image: url('images/bas\ de\ page.png')">
             <div class="opacity-full-dark bg-extra-dark-gray"></div>           
             <div class="container position-relative">
                 <div class="row justify-content-center">
-                  <div class="col-12 col-lg-7 col-md-11 text-center">                          
-                    <h5 class="text-light-gray alt-font margin-40px-bottom sm-margin-30px-bottom" style="font-weight: 550;">Si une image vaut 1000 mots, alors <br> imaginez la puissance d'une vidéo!</h5>
-                  </div>                        
+                    <div class="col-12 col-lg-7 col-md-11 text-center">                          
+                        <h5 class="text-light-gray alt-font margin-40px-bottom sm-margin-30px-bottom" style="font-weight: 550;">Si une image vaut 1000 mots, alors <br> imaginez la puissance d'une vidéo!</h5>
+                    </div>                      
                 </div>
             </div>
         </section>
@@ -323,8 +234,5 @@
         <script type="text/javascript" src="js/theme-vendors.min.js"></script>
         <!-- setting -->
         <script type="text/javascript" src="js/main.js"></script>
-        <script src="vertical-timeline-with-animations/js/timeline.js"></script>
-        <script src="vertical-timeline-with-animations/js/fadeIn.js"></script>
-        <script  src="vertical-timeline-with-animations/dist/script.js"></script>
     </body>
 </html>
