@@ -7,11 +7,11 @@ page notre histoire
 
 page équipe
 
-page de soumission
+page de soumission 
+
+mailto
 
 tester le plus possible
-
-hosting solution
 
 pourquoi nous dans service
 
