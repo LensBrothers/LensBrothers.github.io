@@ -2,6 +2,15 @@
   .fixedbutton {
     display: none;
   }
+  .nopad {
+    padding-right: 0;
+  }
+
+}
+
+.nopad2{
+  padding-top: 0px;
+  padding-left: 0%;
 }
 
 .fixedbutton {
@@ -10,6 +19,7 @@
   right: 3vw; 
   z-index: 100;
 }
+
 
 
 
