@@ -20,6 +20,24 @@
   z-index: 100;
 }
 
+/* justified gallery */
+.justified-gallery>a>.jg-caption, .justified-gallery>div>.jg-caption, .justified-gallery>figure>.jg-caption {
+  padding:7px 15px; 
+  opacity: 0; 
+  display: initial !important; 
+  bottom: 0;  
+  transition: all 0.3s ease 0s; 
+  -webkit-transition: all 0.3s ease 0s; 
+  -moz-transition: all 0.3s ease 0s; 
+  -ms-transition: all 0.3s ease 0s; 
+  -o-transition: all 0.3s ease 0s; 
+  font-family: 'Montserrat', 
+  sans-serif; font-weight: 600; 
+  font-size: 11px; 
+  text-transform: uppercase
+}
+.caption.caption-visible {opacity: 1; bottom: 0 !important}
+
 
 
 

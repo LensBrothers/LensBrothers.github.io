@@ -4319,6 +4319,8 @@
     .sm-opacity9 {opacity:.9}
     .sm-opacity10 {opacity:1}
 
+    .hiddentest{display:none;}
+
     /* image position*/ 
     .sm-background-image-left { background-position: left !important;}
     .sm-background-image-right { background-position: right !important;}
