@@ -38,6 +38,11 @@
 }
 .caption.caption-visible {opacity: 1; bottom: 0 !important}
 
+.box-style-7:hover i { opacity: 0;transition: opacity 0.2s ease;}
+.hover-7:hover a{opacity: 0;transition: opacity 0.2s ease;}
+.hover-7:hover p span{opacity: 0;transition: opacity 0.2s ease;}
+
+
 
 
 
