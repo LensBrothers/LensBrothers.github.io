@@ -65,11 +65,12 @@
                                     data-bs-toggle="dropdown" aria-hidden="true"></i>
                             </li>
                             <li class="dropdown megamenu-fw">
-                                <a href="realisations.html">nos réalisations</a><i
+                                <a href="realisations.html">Nos réalisations</a><i
                                     class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown"
                                     aria-hidden="true"></i>
                             </li>
                         </ul>
+
                         <ul class="nav navbar-nav navbar-right no-margin alt-font text-normal w-40 md-w-100 justify-content-start"
                             data-in="animate__fadeIn" data-out="animate__fadeOut">
                             <!-- start menu item -->
@@ -80,6 +81,11 @@
                             <li class="dropdown megamenu-fw">
                                 <a href="histoire.html">Notre histoire</a><i class="fas fa-angle-down dropdown-toggle"
                                     data-bs-toggle="dropdown" aria-hidden="true"></i>
+                            </li>
+                            <li class="dropdown megamenu-fw hiddenOnPc">
+                                <a href="soumission.html">Demande de soumission</a><i
+                                    class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-hidden="true"></i>
                             </li>
                         </ul>
                     </div>
@@ -114,12 +120,58 @@
         </div>
     </section>
     <!-- end video style 04 section -->
+    <!-- start accordions style 01 section -->
+    <section class="wow animate__fadeIn bg-light-gray hiddenOnPc" style="padding-top: 0px; padding-bottom: 0px;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <!-- start accordion -->
+                <div class="panel-group accordion-event accordion-style1" id="accordion-design"
+                    data-active-icon="ti-minus" data-inactive-icon="ti-plus">
+                    <!-- start accordion item -->
+                    <div class="panel" style="padding-left: 25px; padding-right: 25px;">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle" data-bs-toggle="collapse" data-bs-parent="#accordion-design"
+                                href="#design10" aria-expanded="false">
+
+                                <div class="panel-title font-weight-500 text-extra-dark-gray text-uppercase">
+                                    <h5 class="alt-font text-extra-dark-gray no-padding no-margin"
+                                        style="font-weight: 700; margin: 0;">
+                                        Nous sommes une boîte de production créative</h4>
+                                        <i class="text-dark-gray ti-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="design10" class="panel-collapse collapse" data-bs-parent="#accordion-design"
+                            aria-expanded="false" role="tablist">
+                            <div class="panel-body" style="font-weight: 500; font-size: 1.1rem;">
+                                LensBrothers est une
+                                boîte de production fièrement québécoise se spécialisant dans la création de contenu
+                                pour les sites web et réseaux sociaux d’entreprises. Nous sommes à l’écoute des besoins
+                                de nos clients en nous adaptons à leurs idées de façon créative afin de répondre aux
+                                demandes précises. Quels que soient vos besoins en production de contenus, marketing,
+                                photos, vidéos, sur trépied ou stabilisateur, ou encore à l’aide d’un Drone, nous sommes
+                                en mesure d’y répondre. Nous utilisons des équipements dotés de la meilleure technologie
+                                actuellement disponible sur le marché. Notre expérience et notre savoir-faire nous
+                                permettront de vous assister à toutes les étapes de votre projet, à partir de
+                                l’élaboration du scénario jusqu’à la réalisation de la campagne de marketing sur le web
+                                et les réseaux sociaux.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                </div>
+                <!-- end accordion -->
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- end accordions style 01 section -->
     <!-- start advantage section -->
     <section class="p-0 wow animate__fadeIn bg-light-gray" id="services">
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-lg-2 row-cols-md-1">
                 <div
-                    class="col padding-one-half-all  text-center text-lg-start last-paragraph-no-margin wow animate__fadeIn">
+                    class="col padding-one-half-all  text-center text-lg-start last-paragraph-no-margin wow animate__fadeIn hiddenOnMobile">
                     <h5 class="alt-font text-extra-dark-gray no-padding no-margin" style="font-weight: 700; margin: 0;">
                         Nous sommes une</h4>
                         <h5 class="alt-font text-extra-dark-gray" style="font-weight: 700;">Boîte de production créative
@@ -144,9 +196,10 @@
                             </div>
                 </div>
                 <div
-                    class="col position-relative md-h-500px sm-h-300 cover-background wow animate__fadeIn padding-one-half-all">
+                    class="col position-relative md-h-500px md-h-500px-mobile sm-h-300 cover-background wow animate__fadeIn padding-one-half-all">
                     <!-- start HTML5 video -->
-                    <video loop="true" autoplay="autoplay" muted poster="images/WebP/Image pour Stop Motion/Red-Raven-Videographer.webp">
+                    <video loop="true" autoplay="autoplay" muted defaultMuted playsinline oncontextmenu="return false;"
+                        preload="auto" poster="images/WebP/Image pour Stop Motion/Red-Raven-Videographer.webp">
                         <source type="video/mp4" src="video/Stop motion version 6 février.mov">
                     </video>
                     <!-- end HTML5 video -->
@@ -159,7 +212,8 @@
     <section class="pb-0 bg-white wow animate__fadeIn " style="padding-top: 30px;">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8 col-md-10 margin-two-bottom text-center last-paragraph-no-margin">
-                <h4 class="alt-font text-extra-dark-gray font-weight-700">Notre mission est de donner vie à votre vision
+                <h4 class="alt-font text-extra-dark-gray font-weight-700 mobile-lr-pad">Notre mission est de donner vie
+                    à votre vision
                 </h4>
                 <p class="d-inline-block" style="font-weight: 500; font-size: 1.2rem; ">Chez LensBrothers, nous sommes
                     déterminés à fournir à nos clients des solutions de contenu créatives et efficaces pour leurs
@@ -489,7 +543,8 @@
                                 <a href="KickAssWorkshop.html">
                                     <figure>
                                         <div class="portfolio-img bg-extra-dark-gray"><img
-                                                src="images/WebP/Images déroullantes bas de page/10-Couple-Love-Photographer.webp" alt="" /></div>
+                                                src="images/WebP/Images déroullantes bas de page/10-Couple-Love-Photographer.webp"
+                                                alt="" /></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box align-middle">
@@ -513,7 +568,8 @@
                                 <a href="KickAssWorkshop.html">
                                     <figure>
                                         <div class="portfolio-img bg-extra-dark-gray"><img
-                                                src="images/WebP/Images déroullantes bas de page/8-Cameraman-On-Set-Studio.webp" alt="" /></div>
+                                                src="images/WebP/Images déroullantes bas de page/8-Cameraman-On-Set-Studio.webp"
+                                                alt="" /></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box align-middle">
@@ -537,7 +593,8 @@
                                 <a href="KickAssWorkshop.html">
                                     <figure>
                                         <div class="portfolio-img bg-extra-dark-gray"><img
-                                                src="images/WebP/Images déroullantes bas de page/1-Follow-Focus.webp" alt="" /></div>
+                                                src="images/WebP/Images déroullantes bas de page/1-Follow-Focus.webp"
+                                                alt="" /></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box align-middle">
@@ -559,7 +616,9 @@
                             <!-- start slide item -->
                             <div class="swiper-slide ">
                                 <figure>
-                                    <div class=""><img src="images/WebP/Images déroullantes bas de page/2-Drone-Quebec-City-WaterFall.webp" /></div>
+                                    <div class=""><img
+                                            src="images/WebP/Images déroullantes bas de page/2-Drone-Quebec-City-WaterFall.webp" />
+                                    </div>
                                 </figure>
                             </div>
                             <!-- end slide item -->
@@ -568,7 +627,8 @@
                                 <a href="KickAssWorkshop.html">
                                     <figure>
                                         <div class="portfolio-img bg-extra-dark-gray"><img
-                                                src="images/WebP/Images déroullantes bas de page/6-Video-Production-Monitor.webp" alt="" /></div>
+                                                src="images/WebP/Images déroullantes bas de page/6-Video-Production-Monitor.webp"
+                                                alt="" /></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box align-middle">
@@ -591,7 +651,8 @@
                             <div class="swiper-slide">
                                 <figure>
                                     <div class="portfolio-img bg-extra-dark-gray"><img
-                                            src="images/WebP/Images déroullantes bas de page/5-Photographer-Toronto-Canon5D.webp" alt="" /></div>
+                                            src="images/WebP/Images déroullantes bas de page/5-Photographer-Toronto-Canon5D.webp"
+                                            alt="" /></div>
                                 </figure>
                             </div>
                             <!-- end slide item -->
@@ -599,7 +660,8 @@
                             <div class="swiper-slide">
                                 <figure>
                                     <div class="portfolio-img bg-extra-dark-gray"><img
-                                            src="images/WebP/Images déroullantes bas de page/9-Red-Camera-Ronin.webp" alt="" /></div>
+                                            src="images/WebP/Images déroullantes bas de page/9-Red-Camera-Ronin.webp"
+                                            alt="" /></div>
                                 </figure>
                             </div>
                             <!-- end slide item -->
@@ -607,7 +669,8 @@
                             <div class="swiper-slide">
                                 <figure>
                                     <div class="portfolio-img bg-extra-dark-gray"><img
-                                            src="images/WebP/Images déroullantes bas de page/4-Red-Raven-Ronin.webp" alt="" /></div>
+                                            src="images/WebP/Images déroullantes bas de page/4-Red-Raven-Ronin.webp"
+                                            alt="" /></div>
                                 </figure>
                             </div>
                             <!-- end slide item -->
@@ -616,7 +679,8 @@
                                 <a href="Stanislas.html">
                                     <figure>
                                         <div class="portfolio-img bg-extra-dark-gray"><img
-                                                src="images/WebP/Images déroullantes bas de page/3-School-stanislas.webp" alt="" /></div>
+                                                src="images/WebP/Images déroullantes bas de page/3-School-stanislas.webp"
+                                                alt="" /></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box align-middle">
@@ -639,7 +703,8 @@
                                 <a href="LaurenceFrancois.html">
                                     <figure>
                                         <div class="portfolio-img bg-extra-dark-gray"><img
-                                                src="images/WebP/Images déroullantes bas de page/7-Wedding-Photographer.webp" alt="" /></div>
+                                                src="images/WebP/Images déroullantes bas de page/7-Wedding-Photographer.webp"
+                                                alt="" /></div>
                                         <figcaption>
                                             <div class="portfolio-hover-main text-center">
                                                 <div class="portfolio-hover-box align-middle">

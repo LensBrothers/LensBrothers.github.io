@@ -26,6 +26,7 @@
     <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
     <link rel="icon" href="images/lensbrothers/Logo_lens_onglet.webp">
 </head>
 
@@ -78,6 +79,11 @@
                                 <a href="histoire.html">Notre histoire</a><i class="fas fa-angle-down dropdown-toggle"
                                     data-bs-toggle="dropdown" aria-hidden="true"></i>
                             </li>
+                            <li class="dropdown megamenu-fw hiddenOnPc">
+                                <a href="soumission.html">Demande de soumission</a><i
+                                    class="fas fa-angle-down dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-hidden="true"></i>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -99,6 +105,47 @@
         </div>
     </section>
     <!-- end help section -->
+    <!-- start form section -->
+    <section class="wow animate__fadeIn padding-two-tb hiddenOnPc" id="start-your-project">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div
+                    class="col-12 col-xl-6 col-lg-7 col-md-9 col-sm-10 md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin padding-two-bottom">
+                    <h5 class="alt-font font-weight-700 text-extra-dark-gray text-uppercase">Demande de soumission</h5>
+                    <p class="w-75 mx-auto sm-w-100 text-medium" style="font-weight: 480;">Peut-être avez-vous une idée
+                        de projet multimédia qui nécessiterait
+                        l’assistance de l’équipe de LensBrothers? Il nous fera plaisir de vous conseiller et vous
+                        produire une soumission détaillée, adaptée à vos besoins spécifiques. Ceci peut être fait sans
+                        aucune obligation de votre part simplement en remplissant le formulaire suivant : </p>
+                </div>
+            </div>
+            <form id="project-contact-form" action="email-templates/contact-form-budget.php" method="post">
+                <div class="col">
+                    <div class="">
+                        <div class="form-results d-none"></div>
+                    </div>
+                    <div class="">
+                        <input type="text" name="name" id="name" placeholder="Nom *" class="big-input required">
+                    </div>
+                    <div class="">
+                        <input type="tel" name="phone" id="phone" placeholder="Téléphone" class="big-input">
+                    </div>
+                    <div class=6">
+                        <input type="email" name="email" id="email" placeholder="E-mail *" class="big-input required">
+                    </div>
+                    <div class="">
+                        <textarea name="comment" id="comment" placeholder="Description sommaire de la demande" rows="6"
+                            class="big-textarea"></textarea>
+                    </div>
+                    <div class="text-center  padding-bottom-mobile">
+                        <button id="project-contact-us-button" type="submit"
+                            class="btn btn-transparent-dark-gray btn-large margin-20px-top submit">Envoyer</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- end form section -->
     <!-- start contact section -->
     <section class="no-padding bg-extra-dark-gray">
         <div class="container-fluid">
@@ -110,7 +157,7 @@
                     <div class="row row-cols-1 row-cols-sm-2 m-0">
                         <!-- start contact item -->
                         <div
-                            class="col bg-white d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin">
+                            class="col bg-light-gray d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin">
                             <i class="icon-clock text-deep-pink icon-medium margin-25px-bottom"></i>
                             <div class="text-black text-uppercase alt-font font-weight-600 margin-5px-bottom">Heure
                                 Administratives</div>
@@ -120,7 +167,7 @@
                         <!-- end contact item -->
                         <!-- start contact item -->
                         <div
-                            class="col bg-light-gray d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin">
+                            class="col bg-white-pc d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin">
                             <i class="icon-phone text-deep-pink icon-medium margin-25px-bottom"></i>
                             <div class="text-black text-uppercase alt-font font-weight-600 margin-5px-bottom">Téléphone
                             </div>
@@ -129,7 +176,7 @@
                         <!-- end contact item -->
                         <!-- start contact item -->
                         <div
-                            class="col bg-light-gray d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin">
+                            class="col bg-white-pc bg-light-gray-mobile d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin">
                             <i class="icon-envelope text-deep-pink icon-medium margin-25px-bottom"></i>
                             <div class="text-black text-uppercase alt-font font-weight-600 margin-5px-bottom">Courriel
                             </div>
@@ -138,7 +185,7 @@
                         </div>
                         <!-- end contact item -->
                         <!-- start contact item -->
-                        <div class="col bg-white d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin"
+                        <div class="col  bg-light-gray-pc bg-white-mobile d-flex flex-column justify-content-center align-items-center text-center h-350px lg-h-300px sm-h-250px last-paragraph-no-margin"
                             style="position: relative;">
                             <i class="icon-target text-deep-pink icon-medium margin-25px-bottom"></i>
                             <div>
@@ -166,7 +213,7 @@
     </section>
     <!-- end contact section -->
     <!-- start form section -->
-    <section class="wow animate__fadeIn padding-two-tb" id="start-your-project">
+    <section class="wow animate__fadeIn padding-two-tb hiddenOnMobile" id="start-your-project">
         <div class="container">
             <div class="row justify-content-center">
                 <div
@@ -199,7 +246,7 @@
                     </div>
                     <div class="text-center">
                         <button id="project-contact-us-button" type="submit"
-                            class="btn btn-transparent-dark-gray btn-large margin-20px-top submit">Envoyer</button>
+                            class="btn btn-transparent-dark-gray btn-large margin-20px-top submit ">Envoyer</button>
                     </div>
                 </div>
             </form>

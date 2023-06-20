@@ -1,7 +1,7 @@
 window.onload = function () {
   var i = 0;
   const tabImage = [
-    "./images/WebP/Pourquoi Nous_/01-Cameraman-On-Set-Studio.webp",
+    "./images/WebP/Image pour Stop Motion/Red-Raven-Videographer.webp",
     "./images/WebP/Pourquoi Nous_/02-Dji-Mavic-3-Cine-Studio-Droneoperator.webp",
     "./images/WebP/Pourquoi Nous_/03-FollowFocus-Red-Raven-Ronin.webp",
     "./images/WebP/Pourquoi Nous_/04-VideoProduction-Red-Raven-Cinema-Promotion.webp",
