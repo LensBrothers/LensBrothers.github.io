@@ -48,15 +48,4 @@ window.onload = function () {
       changeImage("left");
     });
   }
-
-  const elem3 = document.getElementById("swipeimage");
-
-  elem3.addEventListener("touchstart", (e) => {
-    touchstartX = e.changedTouches[0].screenX;
-  });
-
-  elem3.addEventListener("touchend", (e) => {
-    touchendX = e.changedTouches[0].screenX;
-    checkDirection();
-  });
 };

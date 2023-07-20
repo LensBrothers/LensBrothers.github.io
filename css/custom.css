@@ -122,7 +122,11 @@
   .padding-bottom-mobile{
     padding-bottom: 10px;
   }
-  .md-h-500px-mobile {
+  .padding-bottom-mobile-2{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .padding-lr-mobile-pourcent{
     height: 100% !important;
   }
   .mobile-lr-pad {
@@ -145,6 +149,15 @@
   .text-medium {
     font-size: 15px;
     line-height: 23px;
+  }
+  .font-bigger-mobile {
+    font-size: 22px;
+  }
+  .mobile-r {
+    padding-right: 30px;
+  }  
+  .mobile-l {
+    padding-left: 30px;
   }
 }
 
