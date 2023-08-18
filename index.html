@@ -127,15 +127,18 @@
     <!-- end header -->
     <!-- start video style 04 section -->
     <section class="wow animate__fadeIn example no-padding no-transition">
-        <div class="col text-center fit-videos">
-            <!-- start HTML5 video -->
-            <video autoplay="" muted="" playsinline="" loop="">
+        <div class="col text-center fit-videos" id="videoContainer"><!-- start HTML5 video --><video autoplay=""
+                muted="" playsinline="" loop="" onerror="loadYoutubeFallback()">
                 <source type="video/mp4"
                     src="https://lensbrothers.s3.us-east-2.amazonaws.com/Demo_pour_site_web_OFFICIEL_V2.mp4">
-            </video>
-        </div>
-    </section>
-    <!-- end video style 04 section -->
+            </video></div>
+    </section><!-- end video style 04 section -->
+    <script>
+        function loadYoutubeFallback() {
+            var container = document.getElementById('videoContainer');
+            container.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/fxSiMR-dQ_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        }
+    </script>
     <!-- start accordions style 01 section -->
     <section class="wow animate__fadeIn bg-light-gray hiddenOnPc" style="padding-top: 0px; padding-bottom: 0px;">
         <div class="row justify-content-center">
