@@ -153,6 +153,8 @@ blockquote .small:before, blockquote footer:before, blockquote small:before {con
 a.text-link-white-2, a.text-link-white-2 i {color:#ffffff}
 a.text-link-white-2:hover, a.text-link-white-2:hover i, a.text-link-white-2:focus, a.text-link-white-2:focus i {color:var(--base-color);}
 a.text-link-black, a.text-link-black i {color:#000000}
+a.text-link-black:hover, a.text-link-black:hover i, a.text-link-black:focus, a.text-link-black:focus i {color:var(--base-color);}
+
 a.text-link-dark-gray {color:#939393}
 a.text-link-dark-gray:hover, .text-link-dark-gray:focus {color:#232323}
 a.text-link-extra-dark-gray {color:#232323}

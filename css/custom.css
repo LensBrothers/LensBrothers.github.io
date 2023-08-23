@@ -1,3 +1,5 @@
+
+
 .bg-white-pc {
   background-color: #fefefe;
 }
@@ -62,11 +64,7 @@
   opacity: 0;
   transition: opacity 0.2s ease;
 }
-@media (min-width: 992px) {
-  .hiddenOnPc {
-    display: none;
-  }
-}
+
 
 @media (max-width: 991px) {
   .md-h-0px {
@@ -102,14 +100,6 @@
   nav.menu-logo-center .accordion-menu,
   header nav.menu-logo-center .accordion-menu {
     padding: 19px 0 26px 15px;
-  }
-
-  .hiddenOnPc {
-    display: flex;
-  }
-
-  .hiddenOnMobile {
-    display: none;
   }
 
   .navbar-nav > li.dropdown > .fas {
@@ -163,5 +153,26 @@
   }
   .mobile-l {
     padding-left: 30px;
+  }
+}
+
+
+/* This will hide the element on screens smaller than 768px, typically mobile devices */
+.hiddenOnMobile {
+  display: none;
+}
+
+/* This will hide the element on screens larger than or equal to 768px, typically PCs */
+.hiddenOnPc {
+  display: none;
+}
+
+/* Use a media query to change these rules for larger screens */
+@media (min-width: 991px) {
+  .hiddenOnMobile {
+      display: block;
+  }
+  .hiddenOnPc {
+      display: none;
   }
 }
