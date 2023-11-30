@@ -1,11 +1,11 @@
 <!doctype html>
 
-<html class="no-js" lang="en">
+<html class="no-js" lang="fr">
 
 <head>
     <!-- title -->
     <title>LensBrothers</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
     <meta name="author" content="ThemeZaa">
@@ -47,6 +47,7 @@
 
         gtag('config', 'G-V3PEMWVB16');
     </script>
+
 </head>
 
 <body>
@@ -135,7 +136,11 @@
                 <div
                     class="col-12 col-xl-6 col-lg-7 col-md-9 col-sm-10 md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin padding-two-bottom">
                     <h5 class="alt-font font-weight-700 text-extra-dark-gray text-uppercase">Demande de soumission</h5>
-                    <p class="w-75 mx-auto sm-w-100 text-medium" style="font-weight: 480;">Peut-être auriez-vous en tête un projet multimédia pour lequel vous auriez besoin de l'expertise de l'équipe de LensBrothers ? Nous serions heureux de vous offrir nos conseils et de préparer une soumission détaillée, entièrement adaptée à vos besoins spécifique.  Ceci peut être fait sans aucune obligation de votre part, en nous adressant simplement un courriel à l'adresse suivante :</p>
+                    <p class="w-75 mx-auto sm-w-100 text-medium" style="font-weight: 480;">Peut-être aviez-vous en tête
+                        un projet multimédia pour lequel vous auriez besoin de l'expertise de l'équipe de LensBrothers ?
+                        Nous serions heureux de vous offrir nos conseils et de préparer une soumission détaillée,
+                        entièrement adaptée à vos besoins spécifique. Ceci peut être fait sans aucune obligation de
+                        votre part, en nous adressant simplement un courriel à l'adresse suivante :</p>
                 </div>
             </div>
             <!-- <form id="project-contact-form" action="email-templates/contact-form-budget.php" method="post">
@@ -254,11 +259,11 @@
                 <div
                     class="col-12 col-xl-6 col-lg-7 col-md-9 col-sm-10 md-margin-40px-bottom sm-margin-30px-bottom text-center last-paragraph-no-margin padding-one-bottom">
                     <h5 class="alt-font font-weight-700 text-extra-dark-gray text-uppercase">Demande de soumission</h5>
-                    <p class="w-75 mx-auto sm-w-100 text-medium" style="font-weight: 480;">Peut-être auriez-vous en tête
+                    <p class="w-75 mx-auto sm-w-100 text-medium" style="font-weight: 480;">Peut-être aviez-vous en tête
                         un projet multimédia pour lequel vous auriez besoin de l'expertise de l'équipe de LensBrothers ?
                         Nous serions heureux de vous offrir nos conseils et de préparer une soumission détaillée,
                         entièrement adaptée à vos besoins spécifique. Ceci peut être fait sans aucune obligation de
-                        votre part, en nous adressant simplement un courriel à l'adresse suivante :</p>
+                        votre part, en remplissant le formulaire ci-dessous :</p>
                 </div>
             </div>
             <!-- TODO : FIX THIS FORM  -->
@@ -291,11 +296,23 @@
                 <div class="feature-box-wrap">
                     <div class="w-100 lg-h-350px sm-h-300px d-table">
                         <div class="d-table-cell align-middle text-center ">
-                            <!-- <div class="text-extra-dark-gray text-uppercase alt-font font-weight-600 margin-5px-bottom">
-                                Envoyez-nous un courriel en cliquant ci-dessous !</div> -->
-                            <p class="mx-auto text-medium"><a class="text-link-black"
-                                    href="mailto:info@LensBrothers.ca?subject=Demande de soumission"
-                                    style="font-size: x-large;">info@LensBrothers.ca</a></p>
+                            <div class="text-black text-uppercase alt-font font-weight-600 margin-20px-bottom"
+                                style="margin-top: 10px; ">
+                                Envoyez-nous un courriel en utilisant le formulaire ci-dessous !
+                            </div>
+                            <form id="emailForm">
+                                <input type="text" id="name" placeholder="Votre nom" required style="width: 50%;"><br>
+                                <input type="email" id="email" placeholder="Votre adresse courriel" required
+                                    style="width: 50%;"><br>
+                                <textarea id="message" placeholder="Votre message" required
+                                    style="width: 50%; height: 15vh;"></textarea><br>
+                                <button type="submit"
+                                    class="btn btn-transparent-dark-gray btn-large margin-20px-top">Envoyer</button>
+                            </form>
+                            <!-- New div for success message -->
+                            <div id="emailSuccessMessage" style="display: none; color: green; margin-top: 10px;">
+                                Email envoyé avec succès!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,6 +340,7 @@
         </div>
     </section>
     <!-- end parallax scrolling style 01 section -->
+
     <div class="text-white"
         style="background-color: black; height: 4%; width: 100%; display: flex; align-items: center; justify-content: flex-start;">
         <div style="padding-left: 25px;">© LensBrothers | </div><a class="text-link-white-2" style="padding-left: 4px;"
@@ -344,3 +362,39 @@
 </body>
 
 </html>
+
+<script>
+    document.getElementById('emailForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        var data = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        if (name && email && message) {
+            fetch('https://udcx1b28t2.execute-api.us-east-2.amazonaws.com/Prod', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // Update success message div instead of showing popup
+                    var successMessageDiv = document.getElementById("emailSuccessMessage");
+                    successMessageDiv.style.display = "block";
+                })
+                .catch(error => {
+                    // Handle error
+                    console.error('Error sending email:', error);
+                });
+        }
+    });
+</script>
