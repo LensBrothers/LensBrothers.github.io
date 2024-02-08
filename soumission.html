@@ -143,32 +143,31 @@
                         votre part, en nous adressant simplement un courriel à l'adresse suivante :</p>
                 </div>
             </div>
-            <!-- <form id="project-contact-form" action="email-templates/contact-form-budget.php" method="post">
-                <div class="col">
-                    <div class="">
-                        <div class="form-results d-none"></div>
-                    </div>
-                    <div class="">
-                        <input type="text" name="name" id="name" placeholder="Nom *" class="big-input required">
-                    </div>
-                    <div class="">
-                        <input type="tel" name="phone" id="phone" placeholder="Téléphone" class="big-input">
-                    </div>
-                    <div class=6">
-                        <input type="email" name="email" id="email" placeholder="E-mail *" class="big-input required">
-                    </div>
-                    <div class="">
-                        <textarea name="comment" id="comment" placeholder="Description sommaire de la demande" rows="6"
-                            class="big-textarea"></textarea>
-                    </div>
-                    <div class="text-center  padding-bottom-mobile">
-                        <button id="project-contact-us-button" type="submit"
-                            class="btn btn-transparent-dark-gray btn-large margin-20px-top submit">Envoyer</button>
+            <div class="col image-hover-style-3 last-paragraph-no-margin bg-white">
+                <div class="feature-box-wrap">
+                    <div class="w-100 lg-h-350px sm-h-300px d-table">
+                        <div class="d-table-cell align-middle text-center ">
+                            <div class="text-black text-uppercase alt-font font-weight-600 margin-20px-bottom"
+                                style="margin-top: 10px; ">
+                                Envoyez-nous un courriel en utilisant le formulaire ci-dessous !
+                            </div>
+                            <form id="emailForm">
+                                <input type="text" id="name" placeholder="Votre nom" required style="width: 50%;"><br>
+                                <input type="email" id="email" placeholder="Votre adresse courriel" required
+                                    style="width: 50%;"><br>
+                                <textarea id="message" placeholder="Votre message" required
+                                    style="width: 50%; height: 15vh;"></textarea><br>
+                                <button type="submit"
+                                    class="btn btn-transparent-dark-gray btn-large margin-20px-top">Envoyer</button>
+                            </form>
+                            <!-- New div for success message -->
+                            <div id="emailSuccessMessage" style="display: none; color: green; margin-top: 10px;">
+                                Email envoyé avec succès!
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form> -->
-
-            <!-- start info box item -->
+            </div>
             <div class="col image-hover-style-3 last-paragraph-no-margin bg-white">
                 <div class="feature-box-wrap">
                     <div class="w-100 lg-h-350px sm-h-300px d-table">
@@ -221,7 +220,7 @@
                             <div class="text-black text-uppercase alt-font font-weight-600 margin-5px-bottom">Courriel
                             </div>
                             <p class="mx-auto text-medium mb-0 text-black"><a
-                                    href="mailto:info@domain.com">info@lensbrothers.ca</a></p>
+                                    href="mailto:info@lensbrothers.ca">info@lensbrothers.ca</a></p>
                         </div>
                         <!-- end contact item -->
                         <!-- start contact item -->
@@ -266,32 +265,6 @@
                         votre part, en remplissant le formulaire ci-dessous :</p>
                 </div>
             </div>
-            <!-- TODO : FIX THIS FORM  -->
-            <!-- <form id="project-contact-form" action="email-templates/contact-form-budget.php" method="post">
-                <div class="col">
-                    <div class="">
-                        <div class="form-results d-none"></div>
-                    </div>
-                    <div class="">
-                        <input type="text" name="name" id="name" placeholder="Nom *" class="big-input required">
-                    </div>
-                    <div class="">
-                        <input type="tel" name="phone" id="phone" placeholder="Téléphone" class="big-input">
-                    </div>
-                    <div class=6">
-                        <input type="email" name="email" id="email" placeholder="E-mail *" class="big-input required">
-                    </div>
-                    <div class="">
-                        <textarea name="comment" id="comment" placeholder="Description sommaire de la demande" rows="6"
-                            class="big-textarea"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button id="project-contact-us-button" type="submit"
-                            class="btn btn-transparent-dark-gray btn-large margin-20px-top submit ">Envoyer</button>
-                    </div>
-                </div>
-            </form> -->
-            <!-- start info box item -->
             <div class="col image-hover-style-3 last-paragraph-no-margin bg-white">
                 <div class="feature-box-wrap">
                     <div class="w-100 lg-h-350px sm-h-300px d-table">
@@ -323,7 +296,7 @@
     <!-- end form section -->
     <!-- start footer -->
     <!-- start parallax scrolling style 01 section -->
-    <section class="extra-big-section parallax wow animate__fadeIn" data-parallax-background-ratio="0.5"
+    <section class="half-section parallax wow animate__fadeIn hiddenOnMobile" data-parallax-background-ratio="0.5"
         style="background-image: url('images/WebP/Bas\ de\ page/New-York-Drone.webp')">
         <div class="opacity-full-dark bg-extra-dark-gray"></div>
         <div class="container position-relative">
@@ -367,6 +340,52 @@
         </div>
     </section>
     <!-- end parallax scrolling style 01 section -->
+    <!-- start footer -->
+    <!-- start parallax scrolling style 01 section -->
+    <section class="half-section parallax wow animate__fadeIn hiddenOnPc" data-parallax-background-ratio="0.5"
+        style="background-image: url('images/WebP/Bas\ de\ page/New-York-Drone.webp') ">
+        <div class="opacity-full-dark bg-extra-dark-gray"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center ">
+                    <div style="color: white; padding: 20px;" class="font-weight-600 text-medium">
+                        <!-- Left Column -->
+                        <div class="footer-column">
+                            <p>LensBrothers</p>
+                            <p><i class="fas fa-phone-alt"></i> 418-262-8596</p>
+                            <p><a href="mailto:info@lensbrothers.ca" style="color: white; text-decoration: none;"><i
+                                        class="fas fa-envelope"></i> info@lensbrothers.ca</a></p>
+                            <p>Québec, Québec</p>
+                        </div>
+
+                        <!-- Center Column -->
+                        <div class="footer-column">
+                            <p><a href="/services.html" style="color: white; text-decoration: none;">Services</a></p>
+                            <p><a href="/realisations.html"
+                                    style="color: white; text-decoration: none;">Realisations</a></p>
+                            <p><a href="/equipe.html" style="color: white; text-decoration: none;">L'Équipe</a></p>
+                            <p><a href="/histoire.html" style="color: white; text-decoration: none;">Notre Histoire</a>
+                            </p>
+                        </div>
+
+                        <!-- Right Column -->
+                        <div class="footer-column">
+                            <p><a href="/soumission.html" style="color: white; text-decoration: none;">Nous
+                                    contacter</a></p>
+                            <p><a href="https://www.facebook.com/LensBrothersInc"
+                                    style="color: white; text-decoration: none;">Suis-nous sur facebook</a></p>
+                            <p><a href="https://www.instagram.com/lens_brothers/"
+                                    style="color: white; text-decoration: none;">Suis-nous sur instagram</a></p>
+                            <p><a href="https://www.youtube.com/channel/UC7pTYaVvMY4ripUwTLKvktQ"
+                                    style="color: white; text-decoration: none;">Suis-nous sur youtube</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end parallax scrolling style 01 section -->
+    <!-- end footer -->
 
     <div class="text-white"
         style="background-color: black; height: 4%; width: 100%; display: flex; align-items: center; justify-content: flex-start;">
